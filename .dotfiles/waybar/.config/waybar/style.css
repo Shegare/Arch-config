@@ -1,0 +1,96 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* --- ОБЩИЙ СТИЛЬ МОДУЛЕЙ --- */
+#custom-updates,
+#workspaces,
+#clock,
+#network,
+#pulseaudio,
+#tray,
+#custom-power,
+#language {
+    background: #090a08;
+    color: #ffffff;
+    border: solid 2px #484a4a;
+    border-bottom: 2px solid #7e00cc; /* Цветная линия */
+    transition: all 0.3s ease;
+    margin: 3px 0;
+}
+
+/* --- СКРУГЛЕНИЯ "ЛИМОН" --- */
+#custom-updates, 
+#workspaces {
+    margin-left: 8px;
+    padding: 0 10px;
+    border-radius: 5px 20px 5px 20px;
+}
+
+#language,
+#network,
+#pulseaudio,
+#tray,
+#custom-power {
+    margin-right: 8px;
+    padding: 0 10px;
+    border-radius: 20px 5px 20px 5px;
+}
+
+#clock {
+    padding: 0 16px;
+    border-radius: 5px 5px 20px 20px;
+}
+
+/* --- СТИЛИ ПРИ НАВЕДЕНИИ --- */
+#custom-updates:hover,
+#workspaces:hover,
+#clock:hover,
+#language:hover,
+#network:hover,
+#pulseaudio:hover,
+#tray:hover,
+#custom-power:hover {
+    color: #090a08;
+    border-bottom: 2px solid #034f1c; /* Цветная линия */
+    background: linear-gradient(
+        to bottom,
+        #090a08 0%, #222222 1%, #555555 4%,
+        #999999 50%,
+        #555555 96%, #222222 99%, #090a08 100%
+    );
+}
+
+/* Инвертируем скругления при наведении */
+#custom-updates:hover,
+#workspaces:hover {
+    border-radius: 20px 5px 20px 5px;
+}
+
+#language:hover,
+#network:hover,
+#pulseaudio:hover,
+#tray:hover, 
+#custom-power:hover {
+    border-radius: 5px 20px 5px 20px;
+}
+
+#clock:hover {
+    border-radius: 20px 20px 5px 5px;
+}
+
+/* --- ОСОБЫЕ СОСТОЯНИЯ МОДУЛЕЙ --- */
+#workspaces button.active {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ff00c8, 0 0 5px #ff00c8;
+}

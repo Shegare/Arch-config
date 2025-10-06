@@ -1,0 +1,27 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+    "separator": " ",
+    "color": {
+      "keys": "cyan"
+    }
+  },
+  "logo": {
+    "type": "small",
+    "color": { "1": "#d756b5" },
+    "color": { "2": "#d756b5" }
+  },
+  "modules": [
+    { "type": "custom", "format": "╭──────[ System ]──────╮", "outputColor": "magenta" },
+    { "type": "os", "key": "│ " },
+    { "type": "custom", "format": "╰──────────────────────╯", "outputColor": "magenta" },
+    "break",
+    { "type": "custom", "format": "╭─────[ Hardware ]─────╮", "outputColor": "magenta" },
+    { "type": "cpu", "key": "│ ", "format": "{1}" },
+    { "type": "gpu", "key": "│ 󰍹", "format": "{2}" },
+    { "type": "memory", "key": "│ ", "format": "{total}" },
+    { "type": "disk", "key": "│ ", "format": "{2} - {filesystem}" },
+    { "type": "custom", "format": "╰──────────────────────╯", "outputColor": "magenta" }
+  ]
+}
+

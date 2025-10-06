@@ -1,0 +1,41 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(12, 12, 12, 0.9);
+}
+
+button {
+    border-radius: 0;
+    border: solid 2px #484a4a;
+    border-bottom: 2px solid #7e00cc; /* Цветная линия */
+    text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #090a08;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:focus, button:active {
+	background-color: #570041;
+	outline-style: none;
+}
+
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    border-radius: 10px 40px 10px 40px;
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+    border-radius: 10px 10px 40px 40px;
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    border-radius: 40px 10px 40px 10px;
+}

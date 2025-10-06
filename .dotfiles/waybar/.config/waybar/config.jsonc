@@ -1,0 +1,76 @@
+{
+    "margin": "5 20 0 20",
+    "modules-left": [
+        "custom/updates",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+	"hyprland/language",
+        "network",
+        "pulseaudio",
+        "tray",
+        "custom/power"
+    ],
+
+    // Module configurations
+    "custom/updates": {
+        "format": " 󰣇 ",
+	"tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{id} {icon}",
+        "format-icons": {
+            "1": "󰋜",
+            "2": "󰇧",
+            "3": "󱙺",
+            "4": "",
+            "5": " ",
+            "6": " ",
+            "7": " ",
+            "active": "",
+            "default": "•"
+        }
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:L%A | %d %B | %H:%M}"
+    },
+    "hyprland/language": {
+        "format-en": "EN",
+        "format-ru": "RU"
+    },
+    "network": {
+        "format-ethernet": "󰈁 Ethernet",
+        "format-disconnected": "󰤭 Disconnected",
+        "on-click": "~/.config/waybar/scripts/nmtui.sh"
+    },
+    "pulseaudio": {
+        "reverse-scrolling": 1,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "Mute 🚫",
+        "format-source-muted": "Mute 🚫",
+        "format-icons": {
+            "headphone": "",
+            "default": [
+                "🕨",
+                "🕩",
+                "🕪"
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "custom/power": {
+        "format": " ⏻ ",
+        "tooltip": false,
+        "on-click": "wlogout --protocol layer-shell"
+    }
+}
+
