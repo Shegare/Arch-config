@@ -59,13 +59,8 @@ endif
 set number
 set relativenumber
 
-" Визуальное выделение -> системный CLIPBOARD (Wayland)
-xnoremap <leader>y :<C-u>silent '<,'>w !wl-copy --type text/plain<CR><CR>
+" Визуальное выделение -> системный CLIPBOARD
+xnoremap <leader>y "cy:call system('wl-copy', @c)<CR>
 
-" Текущая строка -> CLIPBOARD
-nnoremap <leader>Y :.w !wl-copy --type text/plain<CR><CR>
-
-" Вставка из CLIPBOARD (как текст)
+" Вставка из CLIPBOARD
 nnoremap <leader>p :read !wl-paste --no-newline<CR>
-xnoremap <leader>p :<C-u>read !wl-paste --no-newline<CR>
-
