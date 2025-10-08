@@ -4,8 +4,8 @@
 
 ## 🔗 Первоначальные источники некоторых конфигураций
 
-* Waybar: За основу взята конфигурация из репозитория [Naman-Adhikari/Nixos_config](https://github.com/Naman-Adhikari/Nixos_config/tree/main/modules/waybar)
-* Rofi: Используется тема style-10 из лаунчера type-6 от [adi1090x/rofi](https://github.com/adi1090x/rofi/blob/master/files/launchers/type-6/style-10.rasi)
+* Waybar: За основу взята конфигурация от [Naman-Adhikari/Nixos_config](https://github.com/Naman-Adhikari/Nixos_config/tree/main/modules/waybar)
+* Rofi: Используется тема type-6 style-10 от [adi1090x/rofi](https://github.com/adi1090x/rofi/blob/master/files/launchers/type-6/style-10.rasi)
 
 ## 🖥️ Обзор окружения
 
